@@ -27,6 +27,7 @@ class MainViewController: UIViewController {
     @IBAction func logInButtonPressed() {
         if userNameTF.text != userName || passwordTF.text != password {
             credentialsFailAlert()
+            passwordTF.text = ""
         }
     }
     
@@ -63,7 +64,7 @@ class MainViewController: UIViewController {
 
 }
 
-extension MainViewController {
+extension MainViewController: UITextFieldDelegate {
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
     }

@@ -58,16 +58,48 @@
 		F158BD142718AA7B00B3D736 /* TestDelete */ = {
 			isa = PBXGroup;
 			children = (
-				F158BD152718AA7B00B3D736 /* AppDelegate.swift */,
-				F158BD172718AA7B00B3D736 /* SceneDelegate.swift */,
-				F158BD192718AA7B00B3D736 /* MainViewController.swift */,
-				F158BD292718B34200B3D736 /* GreetingsViewController.swift */,
-				F158BD1B2718AA7B00B3D736 /* Main.storyboard */,
-				F158BD1E2718AA7D00B3D736 /* Assets.xcassets */,
-				F158BD202718AA7D00B3D736 /* LaunchScreen.storyboard */,
-				F158BD232718AA7D00B3D736 /* Info.plist */,
+				F158BD2F2719E6C500B3D736 /* App */,
+				F158BD2C2719E66F00B3D736 /* ViewControllers */,
+				F158BD2D2719E68300B3D736 /* Storyboards */,
+				F158BD2E2719E6B600B3D736 /* Resources */,
 			);
 			path = TestDelete;
+			sourceTree = "<group>";
+		};
+		F158BD2C2719E66F00B3D736 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F158BD192718AA7B00B3D736 /* MainViewController.swift */,
+				F158BD292718B34200B3D736 /* GreetingsViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		F158BD2D2719E68300B3D736 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				F158BD1B2718AA7B00B3D736 /* Main.storyboard */,
+				F158BD202718AA7D00B3D736 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		F158BD2E2719E6B600B3D736 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F158BD1E2718AA7D00B3D736 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F158BD2F2719E6C500B3D736 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				F158BD152718AA7B00B3D736 /* AppDelegate.swift */,
+				F158BD172718AA7B00B3D736 /* SceneDelegate.swift */,
+				F158BD232718AA7D00B3D736 /* Info.plist */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -295,7 +327,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = RR2792TYH2;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = TestDelete/Info.plist;
+				INFOPLIST_FILE = TestDelete/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -323,7 +355,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = RR2792TYH2;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = TestDelete/Info.plist;
+				INFOPLIST_FILE = TestDelete/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
