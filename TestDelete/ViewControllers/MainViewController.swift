@@ -9,23 +9,38 @@ import UIKit
 
 class MainViewController: UIViewController {
 
+    // MARK: - IBOutlets
+    
     @IBOutlet weak var userNameTF: UITextField!
     @IBOutlet weak var passwordTF: UITextField!
     
-    private let userName = "Ravil"
-    private let password = "123"
+    // MARK: - Private properties
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
+//    private let userName = "Ravil"
+//    private let password = "123"
+    private let currentUser = User.getUserData()
+    
+    // MARK: - Navigation
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let greetingsVC = segue.destination as? GreetingsViewController else { return }
-        greetingsVC.userName = userName
+        guard let tabBarController = segue.destination as? UITabBarController else { return }
+        guard let viewControllers = tabBarController.viewControllers else { return }
+        
+        for vc in viewControllers {
+            if let greetingsVC = vc as? GreetingsViewController {
+                // greetingsVC.userName = currentUser
+            } else if let aboutVC = vc as? AboutViewController {
+                
+            }
+        }
+        
+        // greetingsVC.userName = userName
     }
     
+    // MARK: - IBActions
+    
     @IBAction func logInButtonPressed() {
-        if userNameTF.text != userName || passwordTF.text != password {
+        if userNameTF.text != currentUser.login || passwordTF.text != currentUser.password {
             credentialsFailAlert()
             passwordTF.text = ""
         }
@@ -63,6 +78,8 @@ class MainViewController: UIViewController {
     }
 
 }
+
+// MARK: - Extentions
 
 extension MainViewController: UITextFieldDelegate {
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {

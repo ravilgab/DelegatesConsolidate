@@ -14,6 +14,8 @@
 		F158BD1F2718AA7D00B3D736 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F158BD1E2718AA7D00B3D736 /* Assets.xcassets */; };
 		F158BD222718AA7D00B3D736 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F158BD202718AA7D00B3D736 /* LaunchScreen.storyboard */; };
 		F158BD2A2718B34200B3D736 /* GreetingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F158BD292718B34200B3D736 /* GreetingsViewController.swift */; };
+		F1C03367271C976F004E5953 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C03366271C976F004E5953 /* User.swift */; };
+		F1C03369271CCF90004E5953 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C03368271CCF90004E5953 /* AboutViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		F158BD212718AA7D00B3D736 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F158BD232718AA7D00B3D736 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F158BD292718B34200B3D736 /* GreetingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreetingsViewController.swift; sourceTree = "<group>"; };
+		F1C03366271C976F004E5953 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		F1C03368271CCF90004E5953 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,10 +62,11 @@
 		F158BD142718AA7B00B3D736 /* TestDelete */ = {
 			isa = PBXGroup;
 			children = (
-				F158BD2F2719E6C500B3D736 /* App */,
+				F1C03365271C9755004E5953 /* Models */,
 				F158BD2C2719E66F00B3D736 /* ViewControllers */,
 				F158BD2D2719E68300B3D736 /* Storyboards */,
 				F158BD2E2719E6B600B3D736 /* Resources */,
+				F158BD2F2719E6C500B3D736 /* App */,
 			);
 			path = TestDelete;
 			sourceTree = "<group>";
@@ -71,6 +76,7 @@
 			children = (
 				F158BD192718AA7B00B3D736 /* MainViewController.swift */,
 				F158BD292718B34200B3D736 /* GreetingsViewController.swift */,
+				F1C03368271CCF90004E5953 /* AboutViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -100,6 +106,14 @@
 				F158BD232718AA7D00B3D736 /* Info.plist */,
 			);
 			path = App;
+			sourceTree = "<group>";
+		};
+		F1C03365271C9755004E5953 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F1C03366271C976F004E5953 /* User.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -173,9 +187,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1C03369271CCF90004E5953 /* AboutViewController.swift in Sources */,
 				F158BD1A2718AA7B00B3D736 /* MainViewController.swift in Sources */,
 				F158BD162718AA7B00B3D736 /* AppDelegate.swift in Sources */,
 				F158BD182718AA7B00B3D736 /* SceneDelegate.swift in Sources */,
+				F1C03367271C976F004E5953 /* User.swift in Sources */,
 				F158BD2A2718B34200B3D736 /* GreetingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
