@@ -20,13 +20,15 @@ struct User {
 struct Person {
     let name: String
     let surname: String
-    // let image: String
+    let age: String
+    let about: String
+    let image: String
     
     var fullName: String {
         "\(name) \(surname)"
     }
     
     static func getPerson() -> Person {
-        Person(name: "Мыш", surname: "Пыш")
+        Person(name: "Мыш", surname: "Пыш", age: "3", about: "Мышка это кошка. Мама нашла ее когда она кушала салфетку в парке. Она любит есть, спать, есть, играть, есть, есть, шкодить и еще есть. ", image: "MouseTheCat")
     }
 }

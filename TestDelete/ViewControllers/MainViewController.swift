@@ -28,13 +28,12 @@ class MainViewController: UIViewController {
         
         for vc in viewControllers {
             if let greetingsVC = vc as? GreetingsViewController {
-                // greetingsVC.userName = currentUser
-            } else if let aboutVC = vc as? AboutViewController {
-                
+                greetingsVC.currentUser = currentUser
+            } else if let navigationVC = vc as? UINavigationController {
+                let aboutVC = navigationVC.topViewController as! AboutViewController
+                aboutVC.currentUser = currentUser
             }
         }
-        
-        // greetingsVC.userName = userName
     }
     
     // MARK: - IBActions
@@ -47,10 +46,10 @@ class MainViewController: UIViewController {
     }
     
     @IBAction func forgotUserNamePressed() {
-        let alert = UIAlertController(title: "Oops!", message: "Your user name is Ravil", preferredStyle: .alert)
+        let alert = UIAlertController(title: "Oops!", message: "Your user name is Mouse", preferredStyle: .alert)
         
         alert.addAction(UIAlertAction(title: "Ok", style: .default))
-        
+
         present(alert, animated: true)
     }
     
@@ -97,4 +96,6 @@ extension MainViewController: UITextFieldDelegate {
     }
     
 }
+
+
 
